@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meter</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script src="index.js"></script>
+  </head>
+  <style>
+    .screen-container {
+      position: relative;
+      max-width: 914px;
+    }
+    .screen {
+      position: absolute;
+      font-family: digital-7;
+      top: 252px;
+      left: 275px;
+      font-size: 78px;
+      font-weight: 100;
+      color: #737875;
+      letter-spacing: -2px;
+      line-height: 101px;
+    }
+  </style>
+  <body>
+    <div class="meter-link">
+      <a href="index.html">M1</a>
+      <a href="m2.html">M2</a>
+      <a href="m3.html">M3</a>
+      <a href="m4.html">M4</a>
+      <a href="m5.html">M5</a>
+      <a href="m6.html">M6</a>
+    </div>
+    <div class="container">
+      <div class="meter-panel">
+        <!-- 📸 Meter Image -->
+
+        <div class="screen-container">
+          <div class="screen">
+            <span id="meterDisplay">000000</span>
+          </div>
+          <img src="assets/M3.jpeg" alt="" />
+          <input
+            class="input-box"
+            type="number"
+            id="meterInput"
+            placeholder="Enter Meter Reading"
+            maxlength="6"
+            oninput="updateScreen()"
+          />
+          <input
+            type="text"
+            id="kwhInput"
+            placeholder="Enter kWh Value"
+            maxlength="6"
+            oninput="updateScreen()"
+          />
+        </div>
+
+        <!-- 📝 Input Section -->
+        <!-- <div class="inputs">
+             
+              <button onclick="clearDisplay()">Clear</button>
+            </div> -->
+      </div>
+    </div>
+  </body>
+</html>
